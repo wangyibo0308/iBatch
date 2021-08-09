@@ -27,8 +27,4 @@ contract batcher{
             contractaddress[i].call(bytes4(funcHashs[i]), uint256(sender), uint256(arg1[i]), uint256(arg2[i]));
         }
     }
-
-
-
-
 }
