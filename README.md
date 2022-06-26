@@ -10,8 +10,6 @@ iBatch is a middleware system running on top of an operational Ethereum network 
 # Off-chain simulator
 We are not ready to upload our Ethereum client that hooked with iBatch protocol at this time. We upload a off-chain simulator wrote with Python just used to illustrate the off-chain batch process and how to interact with the dispatcher smart contract.
 
-just show the process of
-
 # Integration with legacy smart_contract
 
 Running iBatch with unmodified smart contracts on today’s Ethereum clients would fail because the unmodified smart contracts do not authorize the unmarshalled invocations sent from Dispatcher account. To support iBatch, callee smart contracts need to authenticate the internal calls from Dispatcher and this entails rewriting DApps’ smart contracts to whitelist the Dispatcher account. The following smart-contract code illustrates the example of rewriting transfer() in an ERC20 token contract. 
