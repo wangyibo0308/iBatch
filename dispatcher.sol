@@ -20,7 +20,7 @@ contract batcher{
    function dispatch(address[] memory contractAddrs, bytes32[] memory funcHashs, uint256[][] memory args, uint256 batchernonce, bytes[] memory sigs) public{
         address msgSender;
         uint argsLen;
-        bytes32 msgHash = keccak256(abi.encodePacked(contractAddrs, funcHashs, batchernonce));
+        bytes32 msgHash = keccak256(abi.encodePacked(contractAddrs,batchernonce));
         for(uint i=0; i<contractAddrs.length; i++){
             argsLen = args[i].length;
             if(argsLen == 1){
