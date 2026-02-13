@@ -1,5 +1,5 @@
 # iBatch
-A Ethereum improvement proposal to enable secure batching of smart contract invocations against an untrusted relay server off-chain.
+An Ethereum improvement proposal to enable secure batching of smart contract invocations against an untrusted relay server off-chain.
 
 # System model
 
