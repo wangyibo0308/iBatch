@@ -5,7 +5,7 @@ An Ethereum improvement proposal to enable secure batching of smart contract inv
 
 ![alt text](https://github.com/wangyibo0308/iBatch/blob/main/image/system_model.png)
 
-iBatch is a middleware system running on top of an operational Ethereum network to enable secure batching of smart contract invocations. We introduce two new intermediaries, a untrusted Batcher off-chain and a trusted dispatcher smart contract on-chain. The untrusted Batcher can mount attacks to forge, replay, modify and even omit the invocations from the callers. Also, the Batcher can refuse to batch invocations.
+iBatch is a middleware system running on top of an operational Ethereum network to enable secure batching of smart contract invocations. We introduce two new intermediaries, an untrusted Batcher off-chain and a trusted dispatcher smart contract on-chain. The untrusted Batcher can mount attacks to forge, replay, modify and even omit the invocations from the callers. Also, the Batcher can refuse to batch invocations.
 
 # Off-chain simulator
 We are not ready to upload our Ethereum client that hooked with iBatch protocol at this time. We upload an off-chain simulator written with Python just to illustrate the off-chain batch process and how to interact with the dispatcher smart contract. This off-chain simulator shows a simple example that batching all the ERC-20 transfer invocations that are sent in the same block.
